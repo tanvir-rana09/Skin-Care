@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    background-color: white;
+    margin: 0 auto;
+}
+body{
+   
+    font-family: 'Roboto', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+li{
+    list-style-type: none;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hr-line{
+    opacity: 30%;
+}
+
+/* header css starts from here */
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 7px 0;
+}
+.social-media__icon{
+    margin-left: 15px;
+    color: black;
+    font-size: 1.5rem;
+    
+}
+
+.fa-facebook{
+    transition: transform 0.5s;
+}
+.fa-facebook:hover{
+    color: #0165E1;
+    transform: translateY(-8px);
+    
+}
+.fa-twitter{
+    transition: transform 0.5s;
+}
+.fa-twitter:hover{
+    color: 	#1DA1F2;
+    transform: translateY(-8px);
+    
+}
+.fa-linkedin{
+    transition: transform 0.5s;
+}
+.fa-linkedin:hover{
+    color: #0072b1;
+    transform: translateY(-8px);
+    
+}
+.fa-instagram{
+    transition: transform 0.5s;
+}
+.fa-instagram:hover{
+    color: #FD1D1D;
+    transform: translateY(-8px);
+    
+}
+.fa-github{
+    transition: transform 0.5s;
+}
+.fa-github:hover{
+    color: #333;
+    transform: translateY(-8px);
+    
+}
+
+.header__contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.i-color{
+    color: palevioletred;
+    margin-right: 5px;
+}
+.number{
+    font-size: 0.95rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+   
+}
+.number:hover{
+    
+    font-weight: bold;
+}
+.location:hover{
+    font-weight: bold;
+}
+.vr-line{
+    color: palevioletred;
+    font-weight: bolder;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.contact__location{
+    display: flex;
+}
+
+.header__properties{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    align-items: center;
+    
+}
+.fa-angle-down{
+    font-size: 0.9rem;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+}
+.fa-angle-down:hover{
+    background-color: lightgrey;
+   
+}
+.fa-bangladeshi-taka-sign{
+    font-size: 0.9rem;
+}
+
+.language{
+    margin-left: 10px;
+ 
+}
+
+.mid-header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+.name-logo{
+    display: flex;
+    align-items: center;
+}
+.fa-pagelines{
+    font-size: 2.4rem;
+    color: palevioletred;
+}
+.main-name{
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-size: 1.5rem;
+    color: palevioletred;
+}
+.sub-name{
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+#search{
+    width: 600px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-image: url(p6-imges/pngwing.com\ \(2\).png);
+    
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 17px;
+    background-position-x: 570px;
+}
+#search:focus{
+    font-weight: bold;
+    font-size: 1rem;
+    border-color: #0072b1;
+    
+}
+.account-properties__btn{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    position: relative;
+}
+.account-properties__btn:hover{
+    background-color: lightgrey;
+}
+.account-properties__btn::after{
+    position: absolute;
+    content: '99';
+    background-color: red;
+    color: white;
+    height: 10px;
+    width: 10px;
+    left: 20px;
+    top: 0;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 0.6rem;
+}
+.navbar__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+   
+}
+.navbar__item{
+    margin: 0 30px;  
+    font-size: 1.1rem;  
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.navbar__item a{
+    color: black;
+    position: relative;
+    
+}
+.navbar__item a::after{
+    content: '';
+    height: 4px ;
+    width: 0;
+    background-color: palevioletred;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    border-radius: 100px;
+    transition: width 0.5s;
+}
+.navbar__item a:hover{
+    font-weight: bold;
+}
+.navbar__item a:hover::after{
+    width: 100%;
+    
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffebf7;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    flex: 2;
+    padding: 20px;
+    min-height: 60vh;
+}
+.left-items{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.articles__bio{
+    font-size: 0.9rem;
+    padding: 20px 0;
+}
+.articles__heading{
+    font-size: 2.7rem;
+}
+.articles__heading span{
+    color: palevioletred;
+}
+.articles__btn{
+    width: 40%;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: all 0.3s;
+}
+.articles__btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgb(201, 201, 201);
+   
+}
+.banner__right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.banner-img{
+    width: 100%;
+}
+.banner-social{
+    display: flex;
+    flex-direction: column;
+}
+.banner-social a{
+    margin-top: 10px;
+    transition: transform 0.5s;
+    font-size: 1.8rem;
+}
+.banner-social a:hover{
+    transform: translateX(-10px);
+    
+}
+
+.produckt-highlight{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 20vh;
+}
+.card1{
+    background-image: url('p6-imges/images.jpeg');
+    text-align: right;
+}
+.produckt-highlight div{
+    background-position: center;
+    background-size: 100%;
+    padding: 20px;
+    width: 30%;
+    margin: 10px; 
+    height: 150px;  
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.produckt-highlight div span:hover{
+    color: orangered;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.produckt-highlight div:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card2{
+    background-image: url('p6-imges/images (1).jpeg');
+   
+}
+.card3{
+    background-image: url('p6-imges/shutterstock_1416346496_1024x1024.webp');
+   
+}
+/* header css ends from here */
